@@ -136,7 +136,7 @@
   &__mobile-nav {
     display: none;
     flex-direction: column;
-    padding: 0 0 20px;
+    padding: 0 0 0px;
     background: rgba(245, 243, 238, 0.98);
     backdrop-filter: blur(20px);
     border-top: 1px solid rgba(28, 48, 84, 0.08);
@@ -146,6 +146,7 @@
 
     @media (max-width: 768px) {
       display: flex;
+      width: 100%;
     }
 
     &--open {
