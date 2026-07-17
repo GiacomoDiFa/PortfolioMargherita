@@ -1,0 +1,72 @@
+<!-- HEADER – Portfolio Margherita La Torre -->
+<header class="header" [class.header--scrolled]="isScrolled" id="main-header">
+  <div class="header__inner">
+    <!-- Logo / Nome -->
+    <a href="#home" class="header__logo" id="header-logo">
+      <span class="header__logo-initials">ML</span>
+      <span class="header__logo-name">Margherita La Torre</span>
+    </a>
+
+    <!-- Nav Links -->
+    <nav class="header__nav" id="main-nav" aria-label="Navigazione principale">
+      <a href="#profilo" class="nav-link" id="nav-profilo">Profilo</a>
+      <a href="#esperienze" class="nav-link" id="nav-esperienze">Esperienze</a>
+      <a href="#competenze" class="nav-link" id="nav-competenze">Competenze</a>
+      <a href="#strumenti" class="nav-link" id="nav-strumenti">Strumenti</a>
+      <a href="#formazione" class="nav-link" id="nav-formazione">Formazione</a>
+    </nav>
+
+    <!-- CTA Curriculum -->
+    <a
+      href="curriculum-margherita-la-torre.pdf"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="header__cv-btn"
+      id="header-cv-btn"
+    >
+      <svg
+        width="15"
+        height="15"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+        <polyline points="14 2 14 8 20 8" />
+        <line x1="12" y1="18" x2="12" y2="12" />
+        <polyline points="9 15 12 18 15 15" />
+      </svg>
+      Curriculum
+    </a>
+
+    <!-- Mobile toggle -->
+    <button
+      class="header__mobile-toggle"
+      (click)="toggleMobile()"
+      id="mobile-menu-btn"
+      aria-label="Apri menu"
+    >
+      <span [class.open]="mobileOpen"></span>
+      <span [class.open]="mobileOpen"></span>
+      <span [class.open]="mobileOpen"></span>
+    </button>
+  </div>
+
+  <!-- Mobile Nav -->
+  <div class="header__mobile-nav" [class.header__mobile-nav--open]="mobileOpen">
+    <a href="#profilo" class="mobile-nav-link" (click)="closeMenuandGo()">Profilo</a>
+    <a href="#esperienze" class="mobile-nav-link" (click)="closeMenuandGo()">Esperienze</a>
+    <a href="#competenze" class="mobile-nav-link" (click)="closeMenuandGo()">Competenze</a>
+    <a href="#strumenti" class="mobile-nav-link" (click)="closeMenuandGo()">Strumenti</a>
+    <a href="#formazione" class="mobile-nav-link" (click)="closeMenuandGo()">Formazione</a>
+    <a
+      href="curriculum-margherita-la-torre.pdf"
+      target="_blank"
+      class="mobile-nav-link mobile-nav-link--cta"
+      (click)="closeMenuandGo()"
+    >
+      📄 Visualizza Curriculum
+    </a>
+  </div>
+</header>
