@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular21:build:production"
+              "buildTarget": "PortfolioMargherita:build:production"
             },
             "development": {
-              "buildTarget": "angular21:build:development"
+              "buildTarget": "PortfolioMargherita:build:development"
             }
           },
           "defaultConfiguration": "development"
